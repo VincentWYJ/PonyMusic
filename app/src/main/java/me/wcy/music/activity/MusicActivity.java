@@ -232,6 +232,8 @@ public class MusicActivity extends BaseActivity implements View.OnClickListener,
             case R.id.iv_play_bar_next:
                 next();
                 break;
+            default:
+                break;
         }
     }
 

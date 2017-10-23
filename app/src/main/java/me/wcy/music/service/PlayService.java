@@ -1,5 +1,6 @@
 package me.wcy.music.service;
 
+import android.annotation.SuppressLint;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -94,6 +95,8 @@ public class PlayService extends Service implements MediaPlayer.OnCompletionList
                 case Actions.ACTION_MEDIA_PREVIOUS:
                     prev();
                     break;
+                default:
+                    break;
             }
         }
         return START_NOT_STICKY;
@@ -102,6 +105,7 @@ public class PlayService extends Service implements MediaPlayer.OnCompletionList
     /**
      * 扫描音乐
      */
+    @SuppressLint("StaticFieldLeak")
     public void updateMusicList(final EventCallback<Void> callback) {
         new AsyncTask<Void, Void, Void>() {
             @Override

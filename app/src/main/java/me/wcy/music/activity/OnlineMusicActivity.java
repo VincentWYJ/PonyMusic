@@ -167,6 +167,8 @@ public class OnlineMusicActivity extends BaseActivity implements OnItemClickList
                     case 2:// 下载
                         download(onlineMusic);
                         break;
+                    default:
+                        break;
                 }
             }
         });

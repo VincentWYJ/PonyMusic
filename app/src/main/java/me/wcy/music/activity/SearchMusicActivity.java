@@ -173,6 +173,8 @@ public class SearchMusicActivity extends BaseActivity implements SearchView.OnQu
                     case 1:// 下载
                         download(song);
                         break;
+                    default:
+                        break;
                 }
             }
         });

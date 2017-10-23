@@ -72,6 +72,8 @@ public class AudioFocusManager implements AudioManager.OnAudioFocusChangeListene
                             AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);
                 }
                 break;
+            default:
+                break;
         }
     }
 
