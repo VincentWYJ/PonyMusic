@@ -98,6 +98,8 @@ public class PlaylistAdapter extends BaseAdapter {
                 getMusicListInfo(songListInfo, holderMusicList);
                 holderMusicList.vDivider.setVisibility(isShowDivider(position) ? View.VISIBLE : View.GONE);
                 break;
+            default:
+                break;
         }
         return convertView;
     }

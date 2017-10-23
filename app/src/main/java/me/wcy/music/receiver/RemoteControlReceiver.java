@@ -35,6 +35,8 @@ public class RemoteControlReceiver extends BroadcastReceiver {
             case KeyEvent.KEYCODE_MEDIA_PREVIOUS:
                 PlayService.startCommand(context, Actions.ACTION_MEDIA_PREVIOUS);
                 break;
+            default:
+                break;
         }
     }
 }

@@ -105,6 +105,8 @@ public class LocalMusicFragment extends BaseFragment implements AdapterView.OnIt
                     case 3:// 删除
                         deleteMusic(music);
                         break;
+                    default:
+                        break;
                 }
             }
         });

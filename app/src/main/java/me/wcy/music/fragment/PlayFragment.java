@@ -224,6 +224,8 @@ public class PlayFragment extends BaseFragment implements View.OnClickListener,
             case R.id.iv_prev:
                 prev();
                 break;
+            default:
+                break;
         }
     }
 
@@ -340,6 +342,8 @@ public class PlayFragment extends BaseFragment implements View.OnClickListener,
             case SINGLE:
                 mode = PlayModeEnum.LOOP;
                 ToastUtils.show(R.string.mode_loop);
+                break;
+            default:
                 break;
         }
         Preferences.savePlayMode(mode.value());

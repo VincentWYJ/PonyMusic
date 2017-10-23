@@ -26,6 +26,8 @@ public class ViewUtils {
                 loading.setVisibility(View.GONE);
                 loadFail.setVisibility(View.VISIBLE);
                 break;
+            default:
+                break;
         }
     }
 }
